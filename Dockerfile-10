@@ -1,0 +1,4 @@
+FROM node:10-alpine
+
+RUN apk add --no-cache git python \
+    && yarn global add gulp bower grunt
