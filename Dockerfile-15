@@ -1,0 +1,7 @@
+FROM node:15-alpine
+
+RUN apk add --no-cache autoconf automake build-base g++ git libsass libtool make nasm pkgconfig python zlib-dev \
+    && yarn global add gulp grunt node-sass bower
+
+WORKDIR /app
+VOLUME ["/app"]
